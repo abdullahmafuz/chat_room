@@ -3,7 +3,6 @@ body {
   padding: 0;
   background-color: #242424;
   color: #fff;
-  overflow: hidden;
 }
 
 .container {
@@ -182,5 +181,19 @@ button:hover {
 
 .user-chat .bk-input button:hover {
   background-color: rgba(0, 95, 139, 0.541);
+}
+
+@media screen and (max-width: 786px) {
+  .chat-container {
+    width: 100%;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 /*# sourceMappingURL=index.css.map */

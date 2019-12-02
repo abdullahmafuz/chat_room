@@ -19,13 +19,21 @@ const msgList=document.querySelector('.msg-list');
 
 
 
+
+const chatContainer=document.querySelector('.chat');
+
+
+
 loginbtn.addEventListener('click',()=>{
+
+    
 
     if(username.value === ''|| username.value ==' ' ){
         alert("Please Enter the Username to Join chart Room")
         
     }
     else{
+        chatContainer.classList.remove('none');
         msgList.innerHTML='';
         loginpg.classList.add('none');
 
@@ -37,12 +45,17 @@ loginbtn.addEventListener('click',()=>{
 })
 
 username.addEventListener('keyup',(event)=>{
+
+    
+    
     if(event.keyCode === 13){
         if(username.value === ''|| username.value ==' ' ){
             alert("Please Enter the Username to Join chart Room")
             
         }
         else{
+            chatContainer.classList.remove('none');
+
             msgList.innerHTML='';
             loginpg.classList.add('none');
     
