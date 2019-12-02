@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style/index.css">
+    <script src="socket.io/socket.io.js"></script>
+
+    <title>Random User Chat Room </title>
+</head>
+<body>
+   <!-- login page-->
+    <div class="container ">
+
+        
+        <div class="login">
+            <center>
+                    <h1>Random User Chat Room</h1>
+                    
+                    
+                   
+                            <input id='username' type="text" placeholder="Username" autocomplete="off" required />
+                        </center>
+                            <button id='login'type="submit">Login</button>
+            
+            
+            
+            
+        </div>
+
+       
+    </div>
+
+<!--chat-page-->
+<div class="chat-container">
+     
+<div class="user-online">
+<center>
+    <h2>Online Users</h2>
+    
+    <ul class="users-list">
+       
+        
+    </ul>
+</center>
+   
+
+
+</div>
+
+<div class="user-chat">
+
+    <div class="bk-msg">
+        <ul class="msg-list">
+            
+        </ul>
+    </div>
+    <div class="bk-input">
+        <input placeholder="Type your Message ..." type="text" autocomplete="off" id="chat-input" />
+        <button id=chat-btn-input>Send</button>
+    </div>
+
+</div>
+
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+<script src='./script/script.js'></script>
+  
+</body>
+</html>

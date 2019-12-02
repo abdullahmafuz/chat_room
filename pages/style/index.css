@@ -1,0 +1,186 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #242424;
+  color: #fff;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: url("../asset/login_gif.gif") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 30%;
+  height: 40vh;
+  border-radius: 4%;
+}
+
+.login input {
+  margin: 15px;
+  outline: none;
+}
+
+input:focus {
+  -webkit-box-shadow: 0 0 20px #fff;
+          box-shadow: 0 0 20px #fff;
+}
+
+.login input[type=text] {
+  font-size: 20px;
+  border-radius: 10px;
+  padding-left: 7px;
+}
+
+button {
+  width: 70px;
+  height: 35px;
+  border-radius: 5px;
+  background-color: #183468;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+}
+
+button:hover {
+  -webkit-box-shadow: 0 0 10px #fff;
+          box-shadow: 0 0 10px #fff;
+}
+
+.none {
+  display: none;
+}
+
+.chat-container {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.user-online {
+  -webkit-box-flex: .75;
+      -ms-flex: .75;
+          flex: .75;
+  background: url("../asset/geometric-background.jpg");
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.user-online h2 {
+  font-size: 2em;
+  font-family: cursive;
+  text-shadow: 0px 0px 10px #fff;
+}
+
+.user-online ul {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  list-style: none;
+  font-size: 1.6em;
+  margin-bottom: 10px;
+}
+
+.user-chat {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  background: url("../asset/chat-bg.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.user-chat .bk-msg {
+  width: 100%;
+  height: 85vh;
+}
+
+.user-chat .bk-msg ul {
+  padding: 0;
+  list-style: none;
+  font-size: 1.4em;
+}
+
+.user-chat .bk-msg ul li {
+  padding: 10px;
+  border: 1px solid #fff;
+  margin-bottom: 2px;
+  border-radius: 20px;
+}
+
+.user-chat .bk-msg ul li:nth-child(even) {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.user-chat .bk-msg ul li:nth-child(odd) {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.user-chat .bk-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 12vh;
+}
+
+.user-chat .bk-input input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 10vh;
+  font-size: 1.5em;
+  border-radius: 15px;
+  outline: none;
+  padding-left: 5px;
+}
+
+.user-chat .bk-input button {
+  height: 10vh;
+  border-radius: 15px;
+  background-color: #005f8b;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.user-chat .bk-input button:hover {
+  background-color: rgba(0, 95, 139, 0.541);
+}
+/*# sourceMappingURL=index.css.map */
