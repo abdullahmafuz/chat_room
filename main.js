@@ -45,7 +45,7 @@ io.on("connection",(socket)=>{
 
 
 
-const port =3002 ||process.env;
+const port =process.env.POR ||3002;
 
 server.listen(port,()=>{
     console.log(`server is listening on port ${port}`)
