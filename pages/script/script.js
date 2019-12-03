@@ -24,6 +24,8 @@ const chatContainer=document.querySelector('.chat');
 
 
 
+const bkmsg =document.querySelector('.bk-msg');
+
 loginbtn.addEventListener('click',()=>{
 
     
@@ -88,6 +90,7 @@ function updateUserConnection(user,msg){
     let msgLi = document.createElement("li");
     msgLi.innerHTML=`<b><i>${user}</i></b> <br/> &ensp; ${msg}`
     msgList.appendChild(msgLi);
+    bkmsg.scrollTo(0,9999);
 }
 
 
@@ -102,6 +105,7 @@ socket.on("has connected",(data)=>{
    let msgLi = document.createElement("li");
    msgLi.innerHTML=`<b><i>${data.user}</i></b>  ${msg}`
    msgList.appendChild(msgLi);
+   bkmsg.scrollTo(0,9999);
 
 })
 
@@ -139,8 +143,17 @@ sendbtn.addEventListener('click',()=>{
     
 })
 
+   
+    
+        
+    
+
+
 
 sendInput.addEventListener('keyup',(event)=>{
+    
+    
+
     if(event.keyCode === 13){
         if(sendInput.value === ''|| sendInput.value ==' ' ){
             alert("You can't send empty message ...")
@@ -151,9 +164,12 @@ sendInput.addEventListener('keyup',(event)=>{
             socket.emit("new message",sendInput.value);
             sendInput.value=''
             
+            
+           
         }
-
+       
     }
+    
 })
 
 socket.on("new message",(data)=>{
@@ -162,4 +178,11 @@ socket.on("new message",(data)=>{
 
     updateUserConnection(username,data.msg);
     
+    
 })
+
+
+
+
+
+
