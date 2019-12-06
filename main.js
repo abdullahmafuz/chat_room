@@ -2,14 +2,20 @@ const express=require("express");
 const app=express();
 const http=require("http");
 
+const path =require('path');
+
 const server = http.Server(app)
 var users=[];
 
 const io=require("socket.io")(server);
 
+const staticPath =path.join(__dirname,'./pages');
+
+app.use(express.static(staticPath));
 
 
-app.use('/',require('./router/index'));
+
+
 
 
 
