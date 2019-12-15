@@ -161,6 +161,11 @@ button:hover {
   border-radius: 20px;
 }
 
+.user-chat .bk-msg ul li embed {
+  max-width: 80%;
+  max-height: 50%;
+}
+
 .user-chat .bk-msg ul li:nth-child(even) {
   background: rgba(0, 0, 0, 0.8);
 }
@@ -206,6 +211,51 @@ button:hover {
   background-color: rgba(0, 95, 139, 0.541);
 }
 
+.user-chat .bk-input .upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.user-chat .bk-input .btn {
+  border: 2px solid #353030;
+  color: white;
+  background-color: #005f8b;
+  border-radius: 8px;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.user-chat .bk-input .upload-btn-wrapper input[type=file] {
+  font-size: 1em;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+#upload-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 30%;
+  height: 10%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #18aaff;
+  color: azure;
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: .7;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+}
+
 @media screen and (max-width: 786px) {
   .chat-container {
     width: 100%;
@@ -217,6 +267,10 @@ button:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  #upload-container {
+    width: 70%;
+    height: 20%;
   }
 }
 /*# sourceMappingURL=index.css.map */

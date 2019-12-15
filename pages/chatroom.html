@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style/index.css">
+    <script src="socket.io/socket.io.js"></script>
+
+    <title>Random User Chat Room </title>
+</head>
+<body>
+   
+
+<!--chat-page-->
+<div class="chat">
+        <div class="chat-container">
+     
+                <div class="user-online">
+                <center>
+                    <h2>Online Users</h2>
+                    
+                    <ul class="users-list">
+                       
+                        
+                    </ul>
+                </center>
+                   
+                
+                
+                </div>
+                
+                <div class="user-chat">
+                
+                    <div class="bk-msg" id="style-6">
+                        <ul class="msg-list">
+                            
+                        </ul>
+                    </div>
+                    <div class="bk-input">
+                        <input placeholder="Type your Message ..." type="text" autocomplete="off" id="chat-input" />
+                        <div class="upload-btn-wrapper">
+                            <button class="btn" id='uploadbtn'>Upload</button>
+                          </div>
+                        <button id=chat-btn-input>Send</button>
+                    </div>
+                
+                </div>
+               
+                    </div>
+</div>
+
+    
+
+
+
+<form action="/upload" method="post" enctype="multipart/form-data" class="none" id='upload-container' >
+    <center>
+        <input type="file" name="myfile" />
+        <button type="submit" id='fileupload'>Upload</button>
+        <button  id='close'> X </button>
+    </center>
+    
+</form>
+
+
+
+
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src='./script/chat.js'></script>
+  
+</body>
+</html>
