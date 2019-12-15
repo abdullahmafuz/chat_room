@@ -111,11 +111,27 @@ io.on("connection",(socket)=>{
     
     socket.on("upload",(data)=>{
 
+        function checkForValue(){
 
-        
+            console.log('waitttting')
+            
+            if(filename !== undefined ){
+                console.log('insdie')
+                io.emit("upload",{file:filename,username:name})
+                filename=undefined;
+                return 
+            }
             setTimeout(()=>{
-                io.emit("upload",{file:filename,username:name}) 
+                checkForValue()
             },2000);
+            
+            
+        }
+
+        checkForValue();
+    
+            
+    
         
         
         
